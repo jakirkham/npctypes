@@ -15,6 +15,7 @@ ArrayTuple = collections.namedtuple(
     ]
 )
 
+
 def tinfo(a_type):
     """
         Takes a ``numpy.dtype`` or any type that can be converted to a

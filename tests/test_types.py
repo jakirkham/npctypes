@@ -8,12 +8,12 @@ import doctest
 import sys
 import unittest
 
-from npctypes import npctypes
+from npctypes import types
 
 
-# Load doctests from `npctypes`.
+# Load doctests from `types`.
 def load_tests(loader, tests, ignore):
-    tests.addTests(doctest.DocTestSuite(npctypes))
+    tests.addTests(doctest.DocTestSuite(types))
     return tests
 
 

@@ -25,7 +25,7 @@ npctypes
 A Python package for working with NumPy arrays and ctypes arrays.
 
 
-* Free software: BSD license
+* Free software: BSD 3-Clause
 * Documentation: https://npctypes.readthedocs.io.
 
 

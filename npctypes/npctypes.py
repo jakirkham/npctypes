@@ -39,3 +39,34 @@ def tinfo(a_type):
         return(numpy.iinfo(a_type))
     else:
         return(numpy.finfo(a_type))
+
+
+def ctype(a_type):
+    """
+        Takes a numpy.dtype or any type that can be converted to a numpy.dtype
+        and returns its equivalent ctype.
+
+        Args:
+            a_type(type):      the type to find an equivalent ctype to.
+
+        Returns:
+            (ctype):           the ctype equivalent to the dtype provided.
+
+        Examples:
+            >>> ctype(float)
+            <class 'ctypes.c_double'>
+
+            >>> ctype(numpy.float64)
+            <class 'ctypes.c_double'>
+
+            >>> ctype(numpy.float32)
+            <class 'ctypes.c_float'>
+
+            >>> ctype(numpy.dtype(numpy.float32))
+            <class 'ctypes.c_float'>
+
+            >>> ctype(int)
+            <class 'ctypes.c_long'>
+    """
+
+    return(type(numpy.ctypeslib.as_ctypes(numpy.array(0, dtype=a_type))))

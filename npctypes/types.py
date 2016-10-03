@@ -7,8 +7,8 @@ import collections
 import numpy
 
 
-CTypesArray = collections.namedtuple(
-    "CTypeArray",
+ArrayTuple = collections.namedtuple(
+    "ArrayTuple",
     [
         "type",
         "data",

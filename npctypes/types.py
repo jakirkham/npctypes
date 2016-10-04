@@ -72,7 +72,7 @@ def ctype(a_type):
     return(type(numpy.ctypeslib.as_ctypes(numpy.array(0, dtype=a_type))))
 
 
-def numpy_ptr(a):
+def get_ndpointer_type(a):
     """
         Takes a numpy.ndarray and gets a pointer type for that array.
 
@@ -84,7 +84,7 @@ def numpy_ptr(a):
 
         Examples:
             >>> a = numpy.zeros((3, 4), dtype=float)
-            >>> a_ptr = numpy_ptr(a)
+            >>> a_ptr = get_ndpointer_type(a)
 
             >>> a_ptr
             <class 'numpy.ctypeslib.ndpointer_<f8_2d_3x4_C_CONTIGUOUS_ALIGNED_WRITEABLE_OWNDATA'>

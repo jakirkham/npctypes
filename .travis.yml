@@ -53,7 +53,7 @@ deploy:
   distributions: sdist
   user: jakirkham
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: BwdnibSrDWuocq0fqAHhd36siKhP+bH62c9zxc0NPfH9seet9cr99vRZFBYjhAOcb/41lfDv5xlIrdX+tIFg2NDWcIWyyx4q6xeTSlMbJOc48H/5lJl0rdoan9LLyjzB31oda9khD3fOStkdxlKtQEsxGkIz/IdzjcAv+ey+WhcP5VlC7x2lj0ekudwPKqv8PwHlsa534Hyoi0BrOG7KkU7SzALEeb5CVFOFFMTYtS7o/2iY/I7Zjb27olCvBlivHgwYAHG6khXczUisOF99oAUMRJKCkwNr2bxMvpXlxnv0iG/sMpGv7ywloqhFFIfLN/uwl9r4gLz2XqY1MBYPTQtomKIXBezs/14ZVAqLFKOpjR/ztOHxQ9Nt4SyC8XaFCTgleoD31nfHMmAEHN4NDVwGlyrF0mnoL+xd3SU4twLf2JFKaM/ZdyMo31B3iPm+eCAF2cdsJZC/x0Q3xAUWxiU8OK/RPBsByi3jVK4lN6xxwoDCk70rDHfBPvHbqsAZkPNlvzPZjpQhrQ7/l6QGT3rqjidyGVxUgnUf0OL+Tvv19itPLdmLA1yqLW2qh2byVuHNnOv4zKFts5Zn70gYF+PRcZCxXSgfUiDSpzKNMEWdNgc+75RIcqI61951mhTUjuSPznbynr1lFKYJb5NiBfAstwmsrnbtqpgcGM9BTKI=
   on:
     tags: true
     repo: jakirkham/npctypes

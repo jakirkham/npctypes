@@ -35,6 +35,13 @@ def ndarray(shape, dtype, order=None):
         Returns:
             ctypes.Array:               Custom Array (NDArray) instance
                                         allocated on the shared process heap.
+
+        Examples:
+            >>> ndarray((2,3), float)               # doctest: +ELLIPSIS
+            <npctypes.shared.NDArray_<f8_2d_2x3_C object at 0x...>
+
+            >>> ndarray((2,3), float, order='F')    # doctest: +ELLIPSIS
+            <npctypes.shared.NDArray_<f8_2d_2x3_F object at 0x...>
     """
 
     global _ndarray_cache
@@ -102,6 +109,23 @@ def as_ndarray(a, writeable=True):
         Returns:
             ctypes.Array:               Custom Array instance allocated on the
                                         shared process heap.
+
+        Examples:
+            >>> a = ndarray((2,3), float)
+            >>> with as_ndarray(a) as nd_a:
+            ...     nd_a[...] = 0
+            ...     print(nd_a)
+            [[ 0.  0.  0.]
+             [ 0.  0.  0.]]
+
+            >>> a = ndarray((2,3), float)
+            >>> with as_ndarray(a) as nd_a:
+            ...     for i in range(nd_a.size):
+            ...         nd_a.flat[i] = i
+            ...
+            ...     print(nd_a)
+            [[ 0.  1.  2.]
+             [ 3.  4.  5.]]
     """
 
     # Construct the NumPy array object.

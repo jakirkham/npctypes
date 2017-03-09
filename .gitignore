@@ -58,3 +58,6 @@ docs/npctypes*.rst
 
 # PyBuilder
 target/
+
+# pyenv python configuration file
+.python-version

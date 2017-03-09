@@ -5,13 +5,19 @@ npctypes
 
 .. image:: https://img.shields.io/pypi/v/npctypes.svg
         :target: https://pypi.python.org/pypi/npctypes
+        :alt: PyPI
 
-.. image:: https://img.shields.io/travis/jakirkham/npctypes.svg
+.. image:: https://anaconda.org/conda-forge/npctypes/badges/version.svg
+        :target: https://anaconda.org/conda-forge/npctypes
+        :alt: conda-forge
+
+.. image:: https://img.shields.io/travis/jakirkham/npctypes/master.svg
         :target: https://travis-ci.org/jakirkham/npctypes
+        :alt: Travis CI
 
 .. image:: https://readthedocs.org/projects/npctypes/badge/?version=latest
         :target: https://npctypes.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+        :alt: Read the Docs
 
 .. image:: https://coveralls.io/repos/github/jakirkham/npctypes/badge.svg
         :target: https://coveralls.io/github/jakirkham/npctypes

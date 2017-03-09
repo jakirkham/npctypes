@@ -93,7 +93,7 @@ def get_ndpointer_type(a):
             dtype('float64')
             >>> a_ptr._ndim_
             2
-            >>> a_ptr._shape_
+            >>> tuple(int(s) for s in a_ptr._shape_)
             (3, 4)
             >>> a_ptr._flags_
             1285

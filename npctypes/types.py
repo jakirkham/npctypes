@@ -29,8 +29,8 @@ def tinfo(a_type):
             >>> tinfo(complex)
             finfo(resolution=1e-15, min=-1.7976931348623157e+308, max=1.7976931348623157e+308, dtype=float64)
 
-            >>> tinfo(int)
-            iinfo(min=-9223372036854775808, max=9223372036854775807, dtype=int64)
+            >>> tinfo(numpy.int32)
+            iinfo(min=-2147483648, max=2147483647, dtype=int32)
     """
 
     a_type = numpy.dtype(a_type).type

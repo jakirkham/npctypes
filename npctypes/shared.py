@@ -112,6 +112,8 @@ def as_ndarray(a, writeable=True):
 
         Examples:
 
+            >>> numpy.set_printoptions(legacy="1.13")
+
             >>> a = ndarray((2,3), float)
             >>> with as_ndarray(a) as nd_a:
             ...     nd_a[...] = 0

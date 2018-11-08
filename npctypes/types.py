@@ -83,6 +83,7 @@ def get_ndpointer_type(a):
             (PyCSimpleType):   the pointer type associated with this array.
 
         Examples:
+
             >>> a = numpy.zeros((3, 4), dtype=float)
             >>> a_ptr = get_ndpointer_type(a)
 
@@ -103,6 +104,7 @@ def get_ndpointer_type(a):
               OWNDATA : True
               WRITEABLE : False
               ALIGNED : True
+              WRITEBACKIFCOPY : False
               UPDATEIFCOPY : False
     """
 

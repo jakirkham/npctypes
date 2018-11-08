@@ -104,6 +104,7 @@ def get_ndpointer_type(a):
               OWNDATA : True
               WRITEABLE : False
               ALIGNED : True
+              WRITEBACKIFCOPY : False
               UPDATEIFCOPY : False
     """
 

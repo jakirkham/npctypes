@@ -111,6 +111,7 @@ def as_ndarray(a, writeable=True):
                                         shared process heap.
 
         Examples:
+
             >>> a = ndarray((2,3), float)
             >>> with as_ndarray(a) as nd_a:
             ...     nd_a[...] = 0
